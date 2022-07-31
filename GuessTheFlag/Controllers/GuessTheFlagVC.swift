@@ -13,7 +13,7 @@ class GuessTheFlagVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupButtons(buttons: buttons)
+        setupButtons()
         view.addSubviews(topButton, middleButton, bottomButton)
         newFlag()
     }
@@ -41,7 +41,7 @@ class GuessTheFlagVC: UIViewController {
     
     //MARK: - Private
     
-    private func setupButtons(buttons: [UIButton]) {
+    private func setupButtons() {
         for (index, button) in buttons.enumerated() {
             button.layer.borderWidth = 1
             button.layer.borderColor = UIColor.lightGray.cgColor
